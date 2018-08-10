@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/map/map",
+    "pages/login/login",
+    "pages/html/html",
+    "pages/tuya/tuya",
+    "pages/profile/profile",
+    "pages/user/user",
+    "pages/index/index",
+    "pages/user/user_details"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#eeeeee"
+  },
+  "tabBar": {
+    "color": "#a2a2a2",
+    "selectedColor": "#32be8c",
+    "position" :"buttom",
+    "list": [
+      {
+        "pagePath": "pages/user/user",
+        "text": "列表",
+        "iconPath": "image/tabbars/tabBar_Waybi@2x.png",
+        "selectedIconPath": "image/tabbars/tabBar_Waybi_c@2x.png"
+      },{
+        "pagePath": "pages/tuya/tuya",
+        "text": "涂鸦",
+        "iconPath": "image/tabbars/tabBar_Waybi@2x.png",
+        "selectedIconPath": "image/tabbars/tabBar_Waybi_c@2x.png"
+      },{
+        "pagePath": "pages/html/html",
+        "text": "html",
+        "iconPath": "image/tabbars/tabBar_Waybi@2x.png",
+        "selectedIconPath": "image/tabbars/tabBar_Waybi_c@2x.png"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "text": "位置",
+        "iconPath": "image/tabbars/tabBar_Waybi@2x.png",
+        "selectedIconPath": "image/tabbars/tabBar_Waybi_c@2x.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "image/tabbars/tabBar_My@3x.png",
+        "selectedIconPath": "image/tabbars/tabBar_My_c@3x.png"
+      }
+    ]
+  }
+}

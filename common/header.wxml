@@ -1,0 +1,8 @@
+<view class='header'>
+  <view class='page_tabbars'>
+    <label >
+     --------我的上线---------
+    </label> 
+  </view>
+
+</view>

@@ -1,0 +1,68 @@
+<!--pages/waybill_details/waybill_details.wxml-->
+<view class='disView' style="display:{{user == null ?'block' :'none'}}" >
+  <text>数据加载中</text>
+</view>
+<view style="display:{{user == null ?'none' :'block'}}" >
+  <view class='disView'  >
+
+
+ 
+    <view class='pading'>
+      <view class='left'>  
+      <image class='goods_img' src='../../image/user/user.png'/>
+      
+      </view> 
+
+
+
+      <view class='right'>
+      <text class='left_text'>序号：{{user.id}} </text>
+      
+    </view> 
+
+     <view class='right'>
+      
+      <text class='left_text'>姓名：{{user.name}} </text>
+      
+    </view> 
+
+     <view class='right'>
+      
+      <text class='left_text'>年龄：{{user.age}} </text>
+    </view> 
+
+  </view> 
+    
+   
+  </view>
+ <!-- 
+  <form bindsubmit='sureLoad_from'>
+    <view class='sureLoad_from'>
+      <view class='pading'>
+        <view class='left'> <text class='left_text'>收货人： </text> </view> 
+        <view class='right'> <input name='receiveman' class='input_text' type='text' placeholder='请输入收货人'></input></view> 
+      </view> 
+      <view class='pading'>
+        <view class='left'> <text class='left_text'>收货人电话： </text> </view> 
+        <view class='right'> <input name='receivephone' class='input_text' type='text' placeholder='请输入收货人电话'></input></view> 
+      </view> 
+      <view class='pading'>
+        <view class='left'> <text class='left_text'>损耗（‰）： </text> </view> 
+        <view class='right'> <input name='sunhao' class='input_text' type='number' placeholder='请输入损耗范围'></input></view> 
+      </view> 
+      <view class='pading'>
+        <view class='left'> <text class='left_text'>详细收货地址： </text> </view> 
+        <view class='right'> <input name='receiveaddress' class='input_text' type='text' placeholder='请输入详细收货地址'></input></view> 
+      </view> 
+      <view class='pading'>
+        <view class='left'> <text class='left_text'>装货重量： </text> </view> 
+        <view class='right'> <input name='loadweight' class='input_text' type='number' placeholder='请输入装货重量'></input></view> 
+      </view> 
+    </view>
+    <view>
+      <button form-type='submit' class='sure_load_btu'>确认装货信息</button>
+    </view>
+  </form>
+
+  -->
+</view>

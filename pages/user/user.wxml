@@ -1,0 +1,37 @@
+<!--pages/user/user.wxml-->
+<!-- 导入herad -->
+
+<include src="../../common/header.wxml" />
+<view>
+  <scroll-view scroll-y="true" style="height:{{scrollHeight}}px;" 
+    bindscrolltolower="bindDownLoad" bin bin bin bindscroll="scroll" >
+    <!--wx:for等价与wx:for-items是循环数组用的；而wx:for-item则是给列表赋别名用的 -->
+    <view wx:for="{{list}}" class='navigator'>
+     <!-- bindtap，当用户点击该组件的时候会在该页面对应的Page中找到相应的事件处理函数-->
+      <view bindtap='toWaybill_details' data-url='user_details?id={{item.id}}'>
+        <view class='head'  >
+          <label class='waybill_no'>序号 {{item.id}}</label>
+        </view>
+        <view class='waybill_content'>
+          <image class='goods_img' src='../../image/user/user.png'/>
+          <view class='waybill_text'>
+           <text>姓名：{{item.name}}</text> 
+            <text>年龄：{{item.age}}</text> 
+          </view>
+        </view>
+      </view>
+    </view> 
+    
+    <view class="weui-loadmore" style="display:{{isHideLoadMore == true ?'none' :'block'}}" > 
+      <view class="weui-loadmore__tips">{{messge}}</view>
+    </view> 
+
+    </scroll-view>
+  </view>
+
+
+
+
+
+ 
+

@@ -1,0 +1,17 @@
+<view class='view_head'>
+  <image class='head_img' src='../../image/profile/header-photo@2x.png'/>
+  <view class='head_text'>
+    <text>{{UserInfo.name}} </text> 
+    <text> </text>  
+  </view>
+  <!-- <image class='pull_img' src='../../image/profile/mine_pull_small@2x.png'/> -->
+</view>
+<!-- <canvas canvas-id="myCanvas" class="myCanvas" ></canvas>-->
+<page>
+<view class='container'>
+ <view class='canvas-area'></view>
+ <view class='canvas-tools'></view>
+</view>
+</page>
+
+<button bindtap='LoginOut' class='log_out_btu'>退出</button>

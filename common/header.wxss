@@ -1,0 +1,18 @@
+.header{
+  z-index:99;
+  width:100%;
+  position: fixed;
+  top: 0;
+}
+.page_tabbars{
+  background-color: white;
+  display: flex;
+  justify-content: center; 
+}
+.page_tabbars label{
+  height: 50rpx;
+  width: 100%;
+  align-items:center;
+  text-align: center;
+  padding: 25rpx;
+}

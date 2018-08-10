@@ -1,0 +1,28 @@
+<!--pages/login/login.wxml-->
+<page>
+  <view>
+    <view class='logo_view'>
+      <image class='logo_img' src="{{logo_img}}"></image>
+    </view>
+  <form bindsubmit='login'>
+    <view class='form_user'>
+      <view class='view_phone'>
+        <image class='input_img' src='{{input_phone}}'/>
+        <input name='account_name' class='input_text' type='text' value='{{account_name}}' placeholder='请输入用户名'></input>
+        <image id='account_name_img' class='close_img' bindtap='clear_input_content' src='{{close_img}}'/>
+      </view>
+      <view class='view_pwd'>
+        <image class='input_img' src='{{input_pwd}}'/>
+        <input name='account_pwd'password="true" class='input_text' type='text' value='{{account_pwd}}' placeholder='请输入密码'></input>
+        <image id='account_pwd_img' class='close_img' bindtap='clear_input_content' src='{{close_img}}'/>
+      </view>
+    </view>
+    <view class='view_pwd_fun'>
+      <checkbox bindtouchend='check_pwd' name="check_pwd" checked="{{isRememberPwd}}" class='check_pwd'>记住密码</checkbox>
+    </view>
+    <view class='view_login'>
+      <button form-type='submit' class='login_btu'>登录</button>
+    </view>  
+  </form>
+  </view>
+</page>

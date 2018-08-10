@@ -1,0 +1,56 @@
+/* pages/waybill_details/waybill_details.wxss */
+/* 展示详情 */
+page{
+  background-color: #eeeeee
+}
+
+.goods_img{
+  height: 200rpx;
+  width: 200rpx;
+}
+
+.disView{  
+  padding:40rpx ;
+  font-size: 32rpx;
+  background-color: white;
+}
+.pading{
+  padding: 6rpx;
+  height: 200rpx;
+}
+ .left { 
+  align-items:center; 
+  width: 240rpx;
+  display: block; 
+  color: #a4a4a4;
+  text-align: right;
+  float: left;
+}
+.right {
+    display: table;
+    text-align: left; 
+    align-items:left; 
+    color: #000;
+} 
+.right text{ 
+  display: table-cell;
+} 
+.from{
+  background-color: #eee;
+  margin-left: 0rpx;
+}
+input{
+  border: 2rpx solid black;
+  background-color: white
+}
+.sure_load_btu{
+  margin-top: 60rpx;
+  width: 94%;
+  color: white;
+  background-color: #32be8c;
+}
+.sureLoad_from{
+  margin-top: 20rpx;
+  margin-left: 40rpx;
+  font-size: 32rpx;
+}
